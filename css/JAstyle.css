@@ -1,0 +1,714 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.header ul{
+    list-style: none;
+    padding:0;
+    padding-left: 100px;
+}
+
+.icon a i{
+    font-size: 40px;
+    color:#993366;
+    padding-top: 50%; 
+    text-decoration: none;
+}
+.icon a{
+    color: #993366;
+    text-decoration: none;
+    font-size: 30px;  
+}
+.icon a:hover{
+    width: 100%;
+    text-decoration: none;
+    color: #993366;
+}
+.content a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    display: block;    
+}
+.content a:hover{
+    background-color: #993366;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 14px;
+    opacity:0.7;
+}
+.header ul li a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.header ul li a:hover{
+    width: 100%;
+    background-color: #993366;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 14px;
+    opacity:0.7;
+}
+
+/*styling logo*/
+
+.header{
+    background:whitesmoke;
+}
+
+.header .logo, .header ul{
+    margin:0;
+}
+
+/*Styling for larger devices*/
+
+@media only screen and (min-width: 30em){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        background: whitesmoke;
+        align-items: center;
+    }
+    
+    .header ul{
+        display: flex;
+        align-items: center;
+        background:none;
+        flex-wrap: wrap;
+    }
+    
+    .header img{
+        height: 90px;
+        
+    }
+    .header ul li{
+        border-bottom:none;
+        padding: 5px 60px;
+        position:relative;
+    }
+    .header ul li a{
+        padding:1.2rem 1rem;
+    }
+    
+    .header ul li a::before{
+        left:0;
+    } 
+   
+}
+
+/*NAVBAR STYLING STARTS HERE*/
+.navibar ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+}
+
+.navibar ul li{
+    background-color: lightgrey; 
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navibar ul li a{
+    color:black;
+    display: block;
+    text-decoration: none;
+}
+.navibar ul li a:hover{
+    background-color: #993366;
+    color: whitesmoke;
+}
+
+.navibar ul li ul li{
+    display: none;
+}
+
+.navibar ul li:hover ul li{
+    display:block; 
+}
+
+/*NAVBAR STYLING ENDS HERE*/
+
+/*CONTACT STYLING STARTS HERE*/
+
+.contactus {
+    position:relative;
+}
+.center{
+    background-color: black;
+    height: 200px;
+    width:900px;
+    border-radius:10px;
+    opacity: 0.8;
+    padding:25px;
+}
+
+.center {
+    color: whitesmoke;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  
+}
+
+.contactus img {
+    background-size: cover;
+    width: 100%;
+    min-height:400px;
+}
+
+/*Grid starts here*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Creating 4 equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column img {
+    width: 100%;
+  margin-top: 0px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.visitus{
+    font-family:monospace;
+    color: grey;
+    width: 100%;
+    height:50%;
+    background-color: whitesmoke;
+    padding: 30px;
+    padding-top: 80px;
+    text-align: center;   
+}
+.visitus hr{
+    width: 250px;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    display: block;
+    background-color: #cdaa4c;
+}
+.visitus p{
+    font-family:monospace;
+    color: grey;
+    font-size: 25px;
+}
+.visitus a:link{
+    font-family:monospace;
+    color: grey;
+    text-decoration: none;
+}
+.visitus .mail{
+    background-color: #993366;
+    height: 50px;
+    width:250px;
+    font-size: 35px;
+    padding: 20px;
+}
+.visitus .mail:hover{
+    background-color: #F977B6;
+    color: whitesmoke;
+}
+.mapouter{
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas{
+    overflow:hidden;
+    height:100%;
+    width:100%;
+}
+.text-box-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+.contactform input::-webkit-input-placeholder,.contactform textarea::-webkit-input-placeholder {
+  color: #cdaa4c;
+  font-size: 0.875em;
+}
+
+.contactform input:focus::-webkit-input-placeholder,.contactform textarea:focus::-webkit-input-placeholder {
+  color: #cdaa4c;
+}
+
+.contactform input::-moz-placeholder,.contactform textarea::-moz-placeholder {
+  color: #cdaa4c;
+  font-size: 0.875em;
+}
+
+.contactform input:focus::-moz-placeholder,.contactform textarea:focus::-moz-placeholder {
+  color: #cdaa4c;
+}
+
+.contactform input::placeholder,.contactform textarea::placeholder {
+  color: #cdaa4c;
+  font-size: 0.875em;
+}
+
+.contactform input:focus::placeholder,.contactform textarea::focus:placeholder {
+  color: #cdaa4c;
+}
+
+.contactform input::-ms-placeholder,.contactform textarea::-ms-placeholder {
+  color: #cdaa4c;
+  font-size: 0.875em;
+}
+
+.contactform input:focus::-ms-placeholder,.contactform textarea:focus::-ms-placeholder {
+  color: #cdaa4c;
+}
+
+/* on hover placeholder */
+
+.contactform input:hover::-webkit-input-placeholder,.contactform textarea:hover::-webkit-input-placeholder {
+  color: #993366;
+  font-size: 0.875em;
+}
+
+.contactform input:hover:focus::-webkit-input-placeholder,.contactform textarea:hover:focus::-webkit-input-placeholder {
+  color: #993366;
+}
+
+.contactform input:hover::-moz-placeholder,.contactform textarea:hover::-moz-placeholder {
+  color: #993366;
+  font-size: 0.875em;
+}
+
+.contactform input:hover:focus::-moz-placeholder,.contactform textarea:hover:focus::-moz-placeholder {
+ color: #993366;
+}
+
+.contactform input:hover::placeholder,.contactform textarea:hover::placeholder {
+  color: #993366;
+  font-size: 0.875em;
+}
+
+.contactform input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #993366;
+}
+
+.contactform input:hover::placeholder, .contactform textarea:hover::placeholder {
+  color: #993366;
+  font-size: 0.875em;
+}
+
+.contactform input:hover:focus::-ms-placeholder,.contactform textarea:hover::focus:-ms-placeholder {
+  color: #993366;
+}
+
+.contactform body {
+  font-family: monospace;
+  background: #e2dedb;
+  color: #b3aca7;
+}
+
+.contactform h1 {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.contactform #form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+.contactform input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.contactform input:hover {
+  background: #dbd8d6;
+  color: #993366;
+}
+.contactform{
+    color:#cdaa4c;
+    font-size: 20px;
+}
+.contactform textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.contactform textarea:hover {
+  background: #b3aca7;
+  color: #993366;
+}
+
+.contactform #submit {
+  width: 470px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  color:#cdaa4c;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+.contactform #submit:hover{
+    color: #cbc6c1;
+}
+
+.contactform hr{
+    width: 250px;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    display: block;
+    background-color: #cdaa4c;
+}
+/*CONTACT STYLING ENDS HERE*/
+
+/* CHECKOUT STYLING STARTS HERE*/
+.checkout img{
+    opacity:0.8;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+.checkout h1{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    color:burlywood;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    padding: 30px;
+    font-family: "Courier New", Courier, monospace;
+    font-style:oblique;
+    letter-spacing: 4px;
+}
+/* CHECKOUT STYLING ENDS HERE*/
+
+/* LOGIN STYLING STARTS HERE*/
+.bg-img{
+    background-image: url(../img/full/f20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    height:1200px;
+}
+.reg_card{
+    height:600px;
+    width:120%;
+    background-color:slategrey;
+    border-radius:15px; 
+    box-shadow:7px 8px 15px 5px grey; 
+    padding-top:0px;
+    padding:12px;
+    font-size: 70%;
+}
+.inner_card{
+    height:100%;
+    width:100%;
+    background-color:#FFDCED;
+    border-radius:10px;
+    padding:20px;
+}
+
+.greeting{
+    font-size: 40px;
+    color: black;
+}
+inner_cardinput[type=email],inner_card input[type=password],inner_cardinput[type=text]{
+    font-size: 18px;
+    width: 100%;
+    padding: 18px;
+    margin: 0px 0 10px 0;
+    border:none;
+    background: white;
+}
+input[type=submit]{
+    background-color:#993366;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;    
+}
+input[type=submit]:hover{
+    background-color: #F977B6;
+    color: black;
+}
+.remembers a{
+    text-decoration: none;
+    color:#993366;
+}
+.remembers a:hover{
+    text-decoration: none;
+    color:#F977B6;
+}
+/*LOGIN AND REGISTER STYLING ENDS HERE*/
+
+/*PRODUCT DISPLAY STYLING STARTS HERE*/
+
+#rig {
+    max-width:2000px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:whitesmoke;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:50%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    border: 1px solid #993366;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: 100%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+    background-color:#e6e6e6;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    height: 150px;
+    width: 60%;
+    border-radius: 100px;
+    background-color: #993366;
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #993366 no-repeat center 20%;
+    background-size:50% 50%;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    letter-spacing: 10px;
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:78px;
+    font-weight:bold;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:1;
+}
+
+/*PRODUCT DISPLAY STYLING ENDS HERE*/
+
+/* INDEXPAGE STYLING STARTS HERE*/
+
+.carousel-inner{
+            height: 100%;
+            width: 160%;
+        }
+#myCarousel{
+    min-height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+.container-fluid{
+    width: 100%;
+    padding-top:15px;
+}
+.parallax,.parallax_f,.parallax_view{
+      position: relative;
+      opacity: 1;
+      background-attachment:fixed;
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size: cover;
+
+}
+.parallax{
+    min-height: 100%;
+}
+.parallax_f{
+    min-height:100%;
+    padding: 10px;      
+    width:100%;
+    background-image: url(../img/JA-master/f7.jpg)
+}
+.parallax_view{
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/JA-master/f21.jpg)
+}
+.caption{
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: -webkit-left;
+    padding-left: 100px;
+    color: #000;
+
+}
+
+.caption span.border {
+  padding: 18px;
+  font-size: 85px;
+  letter-spacing: 10px;
+  border-radius: 25px;
+
+}
+
+.caption span.border a{
+    color: black;
+
+}
+.caption span.border a:hover{
+   color: cadetblue;
+   text-decoration:none;  
+}
+/* INDEXPAGE STYLING ENDS HERE-->
+
+/* CART STYLING STARTS HERE */
+.cartpanel h2{
+    color: #993366;
+}
+/* CART STYLING ENDS HERE */
+
+/* PRODUCT DESCRIPTION STYLING STARTS HERE */
+/* PRODUCT DESCRIPTION STYLING STARTS HERE */
+
+.description_card{
+    height:450px;
+    width:80%;
+    background-color:#fcf8e3;
+    color:#993366;
+    border-radius:15px; 
+    box-shadow:7px 8px 15px 5px grey; 
+    padding:10px;
+    font-size: 70%;
+    margin-top:5%;
+}
+.description_img img{
+    height:400px; 
+    width:90%; 
+    border:2px solid grey; border-radius: 5px; box-shadow:2px 2px 3px grey;
+}
+/* PRODUCT DESCRIPTION STYLING ENDS HERE */
+
