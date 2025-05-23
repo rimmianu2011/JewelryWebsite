@@ -22,18 +22,21 @@ A complete e-commerce platform for a jewelry store built with **PHP**, **Javascr
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
-project-root/
-│
-├── indexJA.php # Homepage
-├── loginJA.php, registerJA.php
-├── cartJA.php, checkoutJA.php
-├── product listings (bangles, rings, necklaces, etc.)
-├── adminpanel.php, adminindex.php
-├── SQL/ # Database dumps (.sql)
-├── connection.php # DB config
-└── styles/ + images/
+- `indexJA.php` — Homepage
+- `loginJA.php`, `registerJA.php` — User authentication pages
+- `cartJA.php`, `checkoutJA.php` — Cart and checkout logic
+- Product Listings:
+  - `bangles.php`, `rings.php`, `necklaces.php`, `pendants.php`, `ear.php`, `occasions.php`
+- Admin Panel:
+  - `adminpanel.php` — Admin dashboard
+  - `adminindex.php` — Admin login
+- `connection.php` — Database connection configuration
+- `SQL/` — SQL dump files
+  - `admininfo.sql`, `meminfo.sql`, `orders.sql`, etc.
+- `images/` — Product and UI images
+- `styles/` — CSS stylesheets
 
 
 
